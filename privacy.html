@@ -31,7 +31,7 @@
 </header>
 <main class="doc">
 <h1>Privacy policy</h1>
-<p class="meta">Plato: AI calorie and nutrition tracker · Last updated 22 November 2026</p>
+<p class="meta">Plato: AI calorie and nutrition tracker · Last updated 23 November 2026</p>
 
 <div class="box">
 <p><strong>The short version.</strong> Plato keeps your food logs, weigh-ins, photos and settings so it can track your eating for you. It sends meal photos and descriptions to an AI service to estimate nutrition, and your recent logs to the same service when the coach answers you. It has no ads, does not sell your data, and does not use analytics or tracking tools. You can delete your account and everything in it at any time.</p>
@@ -70,7 +70,7 @@
 
 <h3>Purchases</h3>
 <ul>
-  <li>Subscriptions are bought through Google Play. We receive your subscription status (for example, active until a date), never your card details. RevenueCat keeps that status in sync, linked to your Plato account ID.</li>
+  <li>Subscriptions are bought through Google Play. We receive your subscription status (for example, active until a date), never your card details. A subscription management service keeps that status in sync, linked to your Plato account ID.</li>
 </ul>
 
 <h3>Stored only on your phone</h3>
@@ -79,6 +79,12 @@
 </ul>
 
 <p>We don’t collect your location, contacts or advertising ID, and we don’t use analytics, crash-tracking or advertising tools.</p>
+
+<h3>On our website</h3>
+<ul>
+  <li>If you join the early testers at useplato.app, we keep the email address you enter, only to invite you to the test and tell you when Plato launches. Ask us to delete it any time.</li>
+  <li>Like any website, useplato.app is served by a hosting provider and loads fonts from a font provider, which receive standard request data such as your IP address. The site uses no cookies or analytics.</li>
+</ul>
 
 <h2>How we use it</h2>
 <ul>
@@ -90,29 +96,30 @@
 <p>We don’t use your data for advertising, and we don’t sell it or share it for others’ marketing.</p>
 
 <h2>AI processing</h2>
-<p>Plato uses Google’s Gemini API to:</p>
+<p>Plato uses an AI service provider to:</p>
 <ul>
   <li>estimate food and nutrients from meal photos, nutrition labels and descriptions;</li>
   <li>answer your coach questions and write daily tips. For these, it sends your profile and targets, about 14 days of food totals, today’s meals, frequent foods, weigh-ins and activity (including Health Connect steps and active calories, if connected).</li>
 </ul>
-<p>The request goes from our server to Google, with the name you go by in the app but never your email, and the answer comes back to you. Google processes it as our service provider under its API terms. Progress photos are never sent to the AI. AI estimates can be wrong, so check amounts that matter to you.</p>
+<p>The request goes from our server to the AI provider, with the name you go by in the app but never your email, and the answer comes back to you. The provider processes it on our behalf, only to return the answer. Progress photos are never sent to the AI. AI estimates can be wrong, so check amounts that matter to you.</p>
 
 <h2>Who processes your data</h2>
 <div class="table">
 <table>
-  <tr><th>Provider</th><th>What for</th><th>What they receive</th></tr>
-  <tr><td>Supabase</td><td>Database, file storage and sign-in (servers in Tokyo, Japan)</td><td>Everything stored in your account</td></tr>
-  <tr><td>Google</td><td>Google sign-in; Gemini API for AI estimates, coach and tips</td><td>Sign-in details; the photos, text and log summaries described above</td></tr>
-  <tr><td>Google Play</td><td>Payments</td><td>Your purchase (handled by Google)</td></tr>
-  <tr><td>RevenueCat</td><td>Subscription status</td><td>Your Plato account ID and purchase records</td></tr>
-  <tr><td>Resend</td><td>Delivering problem reports to us by email</td><td>The report you chose to send</td></tr>
+  <tr><th>Who</th><th>What for</th><th>What they receive</th></tr>
+  <tr><td>Cloud database and hosting provider</td><td>Storing your account and running Plato’s servers (in Japan)</td><td>Everything stored in your account</td></tr>
+  <tr><td>AI service provider</td><td>Food estimates from photos and text, coach answers and daily tips</td><td>The photos, text and log summaries described above</td></tr>
+  <tr><td>Google</td><td>Sign in with Google; payments through Google Play</td><td>Sign-in details; your purchase (handled by Google)</td></tr>
+  <tr><td>Subscription management service</td><td>Keeping your Pro status in sync</td><td>Your Plato account ID and purchase records</td></tr>
+  <tr><td>Email delivery service</td><td>Delivering problem reports to us</td><td>The report you chose to send</td></tr>
   <tr><td>Open Food Facts</td><td>Looking up a scanned barcode</td><td>The barcode number only</td></tr>
+  <tr><td>Website hosting and font providers</td><td>Serving useplato.app</td><td>Standard request data such as your IP address</td></tr>
 </table>
 </div>
 <p>We may also disclose data if the law requires it.</p>
 
 <h2>Where it’s stored and how it’s protected</h2>
-<p>Your data is stored with Supabase in Japan and may be processed in other countries by the providers above. It travels encrypted (HTTPS). Each account can reach only its own rows and files, and photos are in private storage that is shown to you through short-lived links.</p>
+<p>Your data is stored in Japan and may be processed in other countries by the providers above, under data protection terms with each of them. It travels encrypted (HTTPS). Each account can reach only its own rows and files, and photos are in private storage that is shown to you through short-lived links.</p>
 
 <h2>How long we keep it</h2>
 <p>We keep your data while you have an account. Unlogged scan photos are deleted after about 24 hours. When you delete your account, your data is erased as described below.</p>
