@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plato: snap your plate, it counts the calories</title>
+<meta name="description" content="Plato is an AI calorie tracker for Android. Snap a photo, scan a barcode or say what you ate, and it logs the calories and macros in seconds. Join the early testers.">
+<meta name="theme-color" content="#F6F4EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1410" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="assets/brand/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plato: snap your plate, it counts the calories">
+<meta property="og:description" content="An AI calorie tracker for Android. Photo, barcode, label or a sentence, logged in seconds. Join the early testers.">
+<meta property="og:image" content="https://useplato.app/assets/brand/og.png">
+<meta property="og:url" content="https://useplato.app/">
+<link rel="canonical" href="https://useplato.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/food/plate.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.4-2h5l1.4 2h1.6A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/><circle cx="12" cy="12.5" r="3.5"/></symbol>
+    <symbol id="i-barcode" viewBox="0 0 24 24"><path d="M4 7V5h3M17 5h3v2M20 17v2h-3M7 19H4v-2M8 8.5v7M11 8.5v7M14 8.5v7M16.5 8.5v7"/></symbol>
+    <symbol id="i-label" viewBox="0 0 24 24"><path d="M6 3.5h12v17H6zM9 7.5h6M9 11h6M9 14.5h3"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM18.5 11a6.5 6.5 0 0 1-13 0M12 17.5V21"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V16.5H5A1.5 1.5 0 0 1 3.5 15V7A1.5 1.5 0 0 1 5 5.5z"/></symbol>
+    <symbol id="i-plate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.5v4h-4"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path d="M6.5 10.5h11v9h-11zM9 10.5V8a3 3 0 0 1 6 0v2.5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4 4 0 0 1-.5-8 5.5 5.5 0 0 1 10.6-1.3A4.5 4.5 0 0 1 17.5 18.5z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Plato home"><img src="assets/brand/plato-logo.png" alt="" width="38" height="38">plato</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#coach">Coach</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="btn btn-small" href="#join" data-cta>Join the testers</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-head">
+      <h1 id="hero-title">Snap your plate. Plato does the counting.</h1>
+    </div>
+
+    <figure class="scan" data-scan aria-labelledby="scan-caption">
+      <div class="scan-stage">
+      <div class="scan-plate"><img src="assets/food/plate.webp" width="760" height="760" alt="A plate of grilled salmon, white rice, broccoli and a lemon wedge, seen from above"></div>
+      <svg class="scan-corners" viewBox="0 0 760 760" aria-hidden="true">
+        <path d="M24 150V78a54 54 0 0 1 54-54h72"/>
+        <path d="M610 24h72a54 54 0 0 1 54 54v72"/>
+        <path d="M736 610v72a54 54 0 0 1-54 54h-72"/>
+        <path d="M150 736H78a54 54 0 0 1-54-54v-72"/>
+      </svg>
+      <div class="scan-line" aria-hidden="true"></div>
+
+      <div class="food" data-side="left" style="left:66.6%;top:33.5%;--at:700ms" aria-hidden="true"><i class="food-dot"></i><div class="food-tag"><i class="tag-short">Broccoli · 55</i><b>Broccoli · 1 cup</b><span>55 kcal · 4 g protein</span></div></div>
+      <div class="food" data-side="left" style="left:34%;top:39.5%;--at:780ms" aria-hidden="true"><i class="food-dot"></i><div class="food-tag"><i class="tag-short">Rice · 205</i><b>White rice · 1 cup</b><span>205 kcal · 4 g protein</span></div></div>
+      <div class="food" data-side="left" style="left:83.75%;top:51.9%;--at:930ms" aria-hidden="true"><i class="food-dot"></i><div class="food-tag"><i class="tag-short">Lemon · 2</i><b>Lemon wedge</b><span>2 kcal</span></div></div>
+      <div class="food food-salmon" data-side="right" style="left:50%;top:67.3%;--at:1100ms" aria-hidden="true"><i class="food-dot"></i><div class="food-tag"><i class="tag-short">Salmon · 310</i><b>Salmon fillet · 150 g</b><span>310 kcal · 33 g protein</span></div></div>
+
+      <div class="scan-total" aria-hidden="true">
+        <small>Dinner · 4 foods</small>
+        <strong class="num"><span data-count="572">572</span> kcal</strong>
+        <em class="num">41 g protein</em>
+      </div>
+      </div>
+
+      <ul class="scan-list" aria-label="What Plato found">
+        <li><b>Salmon fillet, 150 g</b><span>310 kcal · 33 g protein</span></li>
+        <li><b>White rice, 1 cup</b><span>205 kcal · 4 g protein</span></li>
+        <li><b>Broccoli, 1 cup</b><span>55 kcal · 4 g protein</span></li>
+        <li><b>Lemon wedge</b><span>2 kcal</span></li>
+        <li class="scan-list-total"><b>Dinner</b><span>572 kcal · 41 g protein</span></li>
+      </ul>
+
+      <figcaption class="scan-foot" id="scan-caption">
+        <span>Sample estimate, for illustration.</span>
+        <button class="scan-again" type="button" data-scan-again hidden aria-label="Scan again" title="Scan again"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-redo"/></svg></button>
+      </figcaption>
+    </figure>
+
+    <div class="hero-act">
+      <p class="lede">Photo, barcode, label or a sentence: Plato logs the calories, protein, carbs and fat in seconds, and shows you before it saves.</p>
+      <form class="signup" data-signup novalidate>
+        <label class="visually-hidden" for="email-hero">Your Gmail address</label>
+        <div class="signup-row">
+          <input id="email-hero" type="email" name="email" placeholder="Your Gmail address" autocomplete="email" inputmode="email" required>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit">Join the early testers</button>
+        </div>
+        <p class="signup-note">Android only. Use the Gmail on your phone so Google Play can let you in.</p>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+        <div class="signup-done"><svg width="28" height="28" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke:#123B2A"><use href="#i-check"/></svg><span data-done-text>You’re on the list. We’ll email you when the test opens.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="how-title">Log it however it happened.</h2>
+      <p>A plate you can photograph, a packet with a barcode, a label, or just a sentence on the way out of a restaurant. Each takes seconds, and nothing is saved until you’ve seen it.</p>
+      <p class="sample" style="grid-column:1/-1;margin:0">Sample screens below, for illustration.</p>
+    </div>
+
+    <div class="ways">
+      <article class="way">
+        <div>
+          <h3><span class="way-icon"><svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-camera"/></svg></span>Photo</h3>
+          <p>Snap your plate. The AI names each food with an amount, then you check it: fix a portion, rename a food, or log it as it is.</p>
+        </div>
+        <div class="frag" aria-label="Example: checking a photographed meal">
+          <div class="frag-title">Check your meal</div>
+          <div class="row"><span><b>Salmon fillet</b> · 150 g</span><span class="kcal num">310 kcal</span></div>
+          <div class="row"><span><b>White rice</b> · 1 cup</span><span class="kcal num">205 kcal</span></div>
+          <div class="row"><span><b>Broccoli</b> · 1 cup</span><span class="kcal num">55 kcal</span></div>
+          <div class="row"><span><b>Lemon wedge</b></span><span class="kcal num">2 kcal</span></div>
+          <div class="frag-actions"><span class="pill pill-forest">Log dinner · 572 kcal</span><span class="pill pill-line">Fix a food</span></div>
+        </div>
+      </article>
+
+      <article class="way">
+        <div>
+          <h3><span class="way-icon"><svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-barcode"/></svg></span>Barcode</h3>
+          <p>Scan a packet and Plato looks it up in Open Food Facts, the open database of packaged foods. Pick how much you had.</p>
+        </div>
+        <div class="frag" aria-label="Example: a scanned product">
+          <div class="frag-title">Scanned</div>
+          <div class="row"><span><b>Plain skyr</b> · 150 g pot</span><span class="kcal num">95 kcal</span></div>
+          <div class="row"><span>Protein 17 g · Carbs 6 g · Fat 0.3 g</span></div>
+          <p class="credit">Product data from Open Food Facts</p>
+        </div>
+      </article>
+
+      <article class="way">
+        <div>
+          <h3><span class="way-icon"><svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-label"/></svg></span>Label</h3>
+          <p>No barcode, or a homemade box from the bakery? Point the camera at the nutrition label and Plato reads it per serving.</p>
+        </div>
+        <div class="frag" aria-label="Example: a nutrition label being read">
+          <div class="bracketed">
+            <div class="label-fact">
+              <div class="lf-head">Nutrition Facts</div>
+              <div class="lf"><span>Serving size</span><span>1 bar (40 g)</span></div>
+              <div class="lf big"><span>Calories</span><span class="num">180</span></div>
+              <div class="lf"><span>Total fat</span><span class="num">7 g</span></div>
+              <div class="lf"><span>Total carbohydrate</span><span class="num">22 g</span></div>
+              <div class="lf"><span>Protein</span><span class="num">10 g</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="way">
+        <div>
+          <h3><span class="way-icon"><svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mic"/></svg></span>Say it</h3>
+          <p>Tap Say it and talk. Your phone turns it into text, so you can fix a misheard word before the AI estimates it. Plato never gets the audio.</p>
+        </div>
+        <div class="frag" aria-label="Example: logging by voice">
+          <div class="voice">
+            <span class="pill pill-forest"><svg width="18" height="18" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mic"/></svg>Done</span>
+            <div class="transcript">two eggs, toast with butter and a flat white<span class="caret" aria-hidden="true"></span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="truth-title" style="padding-top:0">
+  <div class="wrap truth">
+    <div>
+      <h2 id="truth-title">Numbers you can check.</h2>
+      <ul>
+        <li><svg width="24" height="24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><div><b>Real food data</b><span>Foods are matched to USDA FoodData Central with real serving sizes, not guessed from scratch.</span></div></li>
+        <li><svg width="24" height="24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><div><b>Shown before it’s saved</b><span>Every AI estimate waits for your OK. Tap any food later to change the amount.</span></div></li>
+        <li><svg width="24" height="24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><div><b>More than calories</b><span>Protein, carbs and fat for every meal, plus fiber, sodium, and the vitamins and minerals on your day.</span></div></li>
+        <li><svg width="24" height="24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><div><b>Calm about it</b><span>If you go over your goal, Today shows by how much, in plain numbers and without warnings.</span></div></li>
+      </ul>
+    </div>
+    <div class="meal-card" aria-label="Example: a logged dinner with its breakdown">
+      <div class="mc-head"><h3>Dinner</h3><span class="kcal num">572 kcal</span></div>
+      <p class="mc-sub">7:42 pm · 4 foods</p>
+      <div class="macros">
+        <div class="macro c"><small>Carbs</small><b class="num">56 g</b><div class="bar"><i style="--w:25%"></i></div></div>
+        <div class="macro p"><small>Protein</small><b class="num">41 g</b><div class="bar"><i style="--w:34%"></i></div></div>
+        <div class="macro f"><small>Fat</small><b class="num">20 g</b><div class="bar"><i style="--w:29%"></i></div></div>
+      </div>
+      <div class="notes">
+        <div class="note"><span class="note-mark"><svg width="14" height="14" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg></span>Good protein: 41 g, 34% of your day</div>
+      </div>
+      <p class="sample">Sample meal. Bars show its share of a 2,000 kcal day’s targets.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="coach" aria-labelledby="coach-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="panel">
+      <img class="coach-art" src="assets/art/coach.webp" alt="" width="512" height="512" loading="lazy">
+      <div>
+        <h2 id="coach-title">A coach that has read your week.</h2>
+        <p>Ask anything about your eating and get an answer from your own meals, workouts and weigh-ins, not people in general.</p>
+        <ul class="points">
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><b>One tip a day</b>, built on a real pattern in your logs, and a recap of your week every Monday.</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><b>Today so far</b>: calories and protein left, and what would fit your next meal.</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><b>Knows your activity</b> from workouts you log and Health Connect steps.</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><b>Safe by design</b>: never pushes you below a safe minimum, and points you to real help when food feels hard.</span></li>
+        </ul>
+      </div>
+      <div class="coach-demo" aria-label="Example: a coach tip and a question">
+        <div class="tip">
+          <div class="tip-head"><span class="tip-icon"><svg width="22" height="22" fill="none" stroke="#C8F169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-spark"/></svg></span><b>Protein dips on your run days</b></div>
+          <p>On your two run days this week protein was 62 g and 70 g, against a goal of 120 g. A pot of skyr after the run covers 17 g of it.</p>
+          <div class="tip-ask"><svg width="16" height="16" fill="none" stroke="#123B2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-chat"/></svg><span>What else could I eat after a run?</span><svg width="16" height="16" fill="none" stroke="#123B2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-chev"/></svg></div>
+          <div class="tip-now"><svg width="16" height="16" fill="none" stroke="#123B2A" stroke-width="2" aria-hidden="true"><use href="#i-plate"/></svg><span><b>820 kcal and 48 g protein left.</b> Build your dinner around protein.</span></div>
+        </div>
+        <div class="bubble-me">Why am I not losing weight?</div>
+        <div class="bubble-coach">Your trend is down 0.3 kg a week over the last four, so you are, just slower than the 0.5 kg you planned. Weekends average 2,450 kcal against weekdays at 1,850.</div>
+        <p class="sample">Sample conversation, for illustration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="progress-title" style="padding-top:0">
+  <div class="wrap progress-grid">
+    <div class="chart-card" aria-label="Example: weigh-ins with a smoothed trend line">
+      <div class="chart-top">
+        <div><b class="num">79.0 kg</b> <span>trend weight</span></div>
+        <span class="chart-rate num"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:rotate(180deg)"><use href="#i-up"/></svg>0.4 kg a week</span>
+      </div>
+      <svg class="chart" viewBox="0 0 600 260" role="img" aria-label="Daily weigh-ins bounce up and down by about a kilo while the trend line falls steadily">
+        <line class="grid" x1="0" y1="40" x2="600" y2="40"/><line class="grid" x1="0" y1="130" x2="600" y2="130"/><line class="grid" x1="0" y1="220" x2="600" y2="220"/>
+        <text x="0" y="32">81 kg</text><text x="0" y="122">79.5</text><text x="0" y="212">78</text>
+        <g data-dots></g>
+        <path class="trend" data-trend d=""/>
+      </svg>
+      <div class="legend"><span><i></i>Daily weigh-ins</span><span><i class="t"></i>Trend</span></div>
+      <p class="sample">Sample data, for illustration.</p>
+    </div>
+    <div class="progress-copy">
+      <img class="progress-art" src="assets/art/progress.webp" alt="" width="512" height="512" loading="lazy">
+      <h2 id="progress-title">Progress that ignores the noise.</h2>
+      <p class="lede" style="max-width:40ch">Your weight bounces a kilo from day to day. Plato smooths it into a trend, tells you the weekly rate, and when you’ll reach your goal at this pace.</p>
+      <ul class="extras">
+        <li><b>Streaks with a freeze</b><span>Miss a day, keep the streak, once a week</span></li>
+        <li><b>Health Connect</b><span>Steps, active calories, smart-scale weight</span></li>
+        <li><b>Progress photos</b><span>Private, with a before and now slider</span></li>
+        <li><b>Weekly check-in</b><span>Pro: a target that learns your real burn</span></li>
+        <li><b>Widget and dark mode</b><span>Calories left on your home screen</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="pricing-title">Free to use. Pro when you want more.</h2>
+      <p>The free plan is a real calorie tracker, not a trial. Pro is for people who scan every meal and want the target that adapts to them.</p>
+    </div>
+    <div class="plans">
+      <div class="plan plan-free">
+        <h3>Free</h3>
+        <p class="price num">$0</p>
+        <p class="per">Forever</p>
+        <ul>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>3 AI photo scans a day</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Unlimited barcode, label and typed logging</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>5 coach messages a day, plus the daily tip</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Weight trend, streaks, widget, Health Connect</span></li>
+        </ul>
+      </div>
+      <div class="plan plan-pro">
+        <img class="plan-art" src="assets/art/pro.webp" alt="" width="640" height="640" loading="lazy">
+        <h3>Pro</h3>
+        <p class="price num">$3.99 <small>a month</small></p>
+        <p class="per">or $24.99 a year, with a 7-day free trial</p>
+        <ul>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Unlimited AI photo scans</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Up to 60 coach messages a day</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Weekly check-in: your target adjusts to your real burn, never below a safe minimum</span></li>
+          <li><svg width="20" height="20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>Cancel any time in Google Play</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="privacy" aria-labelledby="privacy-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="privacy-title">Your data, plainly.</h2>
+      <p>No ads, no selling, no tracking tools. Here is what leaves your phone and why. The full version is in the <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+    <div class="plain">
+      <div><h3>Photos go to the AI, once</h3><p>A meal photo is sent to an AI service to estimate it. Photos you don’t log are deleted within a day. Progress photos never go to the AI.</p></div>
+      <div><h3>Your voice stays on your phone</h3><p>Say it uses your phone’s speech recognition. Plato gets the words, never the audio.</p></div>
+      <div><h3>Delete everything, any time</h3><p>Settings → Account → Delete account erases your logs, photos and conversations straight away. <a href="delete-account.html">More ways to delete</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section close" id="join" aria-labelledby="join-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="close-frame">
+      <svg class="cc cc-tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M7 73V39A32 32 0 0 1 39 7h34"/></svg>
+      <svg class="cc cc-tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M7 73V39A32 32 0 0 1 39 7h34"/></svg>
+      <svg class="cc cc-bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M7 73V39A32 32 0 0 1 39 7h34"/></svg>
+      <svg class="cc cc-br" viewBox="0 0 80 80" aria-hidden="true"><path d="M7 73V39A32 32 0 0 1 39 7h34"/></svg>
+      <h2 id="join-title">Help us test Plato.</h2>
+      <p>We’re opening a small test on Google Play before launch. Leave the Gmail you use on your Android phone and we’ll send you the invite.</p>
+      <form class="signup" data-signup novalidate>
+        <label class="visually-hidden" for="email-join">Your Gmail address</label>
+        <div class="signup-row">
+          <input id="email-join" type="email" name="email" placeholder="Your Gmail address" autocomplete="email" inputmode="email" required>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit">Join the early testers</button>
+        </div>
+        <p class="signup-note">One email when the test opens. No newsletter.</p>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+        <div class="signup-done"><svg width="28" height="28" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke:#123B2A"><use href="#i-check"/></svg><span data-done-text>You’re on the list. We’ll email you when the test opens.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Plato home"><img src="assets/brand/plato-logo.png" alt="" width="38" height="38" loading="lazy">plato</a>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="delete-account.html">Delete your account</a>
+      <span>Contact: [support email]</span>
+    </nav>
+    <span class="spacer"></span>
+    <span>© <span data-year>2026</span> Plato. Not medical advice.</span>
+  </div>
+</footer>
+
+</body>
+</html>

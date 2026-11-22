@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T02:28:40.010Z",
+  "title": "Design System: Plato website",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "canonical": "oklch(31.8% 0.055 162.9)",
+        "tonalRamp": [
+          "#020F08",
+          "#082B1D",
+          "#214937",
+          "#3F6855",
+          "#5F8874",
+          "#7FAA95",
+          "#B2CBBE",
+          "#E9F0ED"
+        ]
+      },
+      "forest-deep": {
+        "role": "primary",
+        "displayName": "Deep Forest",
+        "canonical": "oklch(27.6% 0.047 162.7)",
+        "tonalRamp": [
+          "#030E08",
+          "#0F2A1E",
+          "#274838",
+          "#456656",
+          "#648675",
+          "#85A896",
+          "#B5CABF",
+          "#EAF0ED"
+        ]
+      },
+      "lime": {
+        "role": "primary",
+        "displayName": "Lime",
+        "canonical": "oklch(90.2% 0.169 123.8)",
+        "tonalRamp": [
+          "#050F00",
+          "#172C00",
+          "#2F4B00",
+          "#4B6B00",
+          "#698C00",
+          "#89AF13",
+          "#B7D086",
+          "#EAF2DE"
+        ]
+      },
+      "lime-press": {
+        "role": "primary",
+        "displayName": "Pressed Lime",
+        "canonical": "oklch(84.9% 0.176 124.0)",
+        "tonalRamp": [
+          "#050F00",
+          "#162C00",
+          "#2E4B00",
+          "#4A6B00",
+          "#688D00",
+          "#88AF00",
+          "#B6D083",
+          "#EAF2DD"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "canonical": "oklch(89.7% 0.028 157.3)",
+        "tonalRamp": [
+          "#070D09",
+          "#1A281F",
+          "#34443A",
+          "#516357",
+          "#708277",
+          "#91A498",
+          "#BCC7C0",
+          "#ECEFED"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Mint",
+        "canonical": "oklch(94.6% 0.019 130.2)",
+        "tonalRamp": [
+          "#0A0C08",
+          "#21261D",
+          "#3C4238",
+          "#5A6055",
+          "#798074",
+          "#9AA195",
+          "#C2C6BE",
+          "#EEEFED"
+        ]
+      },
+      "carbs": {
+        "role": "tertiary",
+        "displayName": "Carbs Blue",
+        "canonical": "oklch(56.1% 0.178 260.3)",
+        "tonalRamp": [
+          "#00042F",
+          "#00146C",
+          "#00339B",
+          "#1556C0",
+          "#3878E5",
+          "#599BFF",
+          "#9CC5FF",
+          "#E3EFFF"
+        ]
+      },
+      "protein": {
+        "role": "tertiary",
+        "displayName": "Protein Orange",
+        "canonical": "oklch(62.1% 0.173 38.8)",
+        "tonalRamp": [
+          "#250000",
+          "#570000",
+          "#820000",
+          "#A82800",
+          "#CE4E1E",
+          "#F57145",
+          "#FFAD92",
+          "#FFE9E1"
+        ]
+      },
+      "fat": {
+        "role": "tertiary",
+        "displayName": "Fat Gold",
+        "canonical": "oklch(69.9% 0.144 82.9)",
+        "tonalRamp": [
+          "#190600",
+          "#401800",
+          "#633300",
+          "#845200",
+          "#A67300",
+          "#C99401",
+          "#DFC083",
+          "#F6EDDD"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Cream Table",
+        "canonical": "oklch(96.7% 0.008 91.5)",
+        "tonalRamp": [
+          "#0C0B09",
+          "#252420",
+          "#41403B",
+          "#5F5D58",
+          "#7F7D78",
+          "#A09E99",
+          "#C5C4C0",
+          "#EFEEED"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#7D7D7D",
+          "#9E9E9E",
+          "#C4C4C4",
+          "#EEEEEE"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Warm Border",
+        "canonical": "oklch(91.3% 0.014 88.7)",
+        "tonalRamp": [
+          "#0C0B08",
+          "#26241D",
+          "#433F37",
+          "#615D55",
+          "#817D74",
+          "#A29E95",
+          "#C6C4BE",
+          "#EFEEED"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "canonical": "oklch(94.3% 0.011 89.7)",
+        "tonalRamp": [
+          "#0C0B09",
+          "#26241F",
+          "#424039",
+          "#605D57",
+          "#807D76",
+          "#A19E97",
+          "#C6C4BF",
+          "#EFEEED"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(22.2% 0.027 161.4)",
+        "tonalRamp": [
+          "#060D09",
+          "#1A2820",
+          "#33443B",
+          "#516359",
+          "#708378",
+          "#90A499",
+          "#BBC8C1",
+          "#ECEFED"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "oklch(49.4% 0.013 167.4)",
+        "tonalRamp": [
+          "#090C0B",
+          "#1F2623",
+          "#3A423E",
+          "#57605C",
+          "#76807C",
+          "#97A19D",
+          "#C0C6C3",
+          "#EDEFEE"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#260000",
+          "#590000",
+          "#860000",
+          "#AC1D17",
+          "#D2463A",
+          "#F96A5B",
+          "#FFA99C",
+          "#FFE8E3"
+        ]
+      },
+      "dark-ground": {
+        "role": "neutral",
+        "displayName": "Dark Ground",
+        "canonical": "oklch(18.1% 0.016 165.4)",
+        "tonalRamp": [
+          "#080C0A",
+          "#1E2622",
+          "#38433E",
+          "#56615B",
+          "#75807B",
+          "#96A29C",
+          "#BFC6C2",
+          "#EDEFEE"
+        ]
+      },
+      "dark-card": {
+        "role": "neutral",
+        "displayName": "Dark Card",
+        "canonical": "oklch(23.1% 0.019 160.5)",
+        "tonalRamp": [
+          "#080C0A",
+          "#1D2721",
+          "#37433C",
+          "#54615A",
+          "#748179",
+          "#95A29A",
+          "#BEC7C1",
+          "#EDEFEE"
+        ]
+      },
+      "dark-border": {
+        "role": "neutral",
+        "displayName": "Dark Border",
+        "canonical": "oklch(30.7% 0.022 161.3)",
+        "tonalRamp": [
+          "#070D0A",
+          "#1C2721",
+          "#36433C",
+          "#53625A",
+          "#738179",
+          "#93A39A",
+          "#BDC7C1",
+          "#ECEFEE"
+        ]
+      },
+      "dark-divider": {
+        "role": "neutral",
+        "displayName": "Dark Divider",
+        "canonical": "oklch(27.2% 0.020 163.0)",
+        "tonalRamp": [
+          "#080D0A",
+          "#1D2722",
+          "#36433D",
+          "#54615A",
+          "#73817A",
+          "#94A39B",
+          "#BEC7C2",
+          "#ECEFEE"
+        ]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Dark Ink",
+        "canonical": "oklch(95.6% 0.007 151.9)",
+        "tonalRamp": [
+          "#0A0C0A",
+          "#222522",
+          "#3D413E",
+          "#5B5F5B",
+          "#7A7F7B",
+          "#9BA09C",
+          "#C2C5C3",
+          "#EEEFEE"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Muted",
+        "canonical": "oklch(74.5% 0.018 156.8)",
+        "tonalRamp": [
+          "#080C0A",
+          "#1E2621",
+          "#38433C",
+          "#56615A",
+          "#758179",
+          "#96A29A",
+          "#BFC6C1",
+          "#EDEFEE"
+        ]
+      },
+      "dark-forest": {
+        "role": "primary",
+        "displayName": "Lit Forest",
+        "canonical": "oklch(33.3% 0.056 161.6)",
+        "tonalRamp": [
+          "#020F08",
+          "#092B1C",
+          "#214936",
+          "#406854",
+          "#5F8873",
+          "#80AA94",
+          "#B2CBBD",
+          "#E9F0EC"
+        ]
+      },
+      "dark-mint": {
+        "role": "secondary",
+        "displayName": "Dark Mint",
+        "canonical": "oklch(28.0% 0.034 157.0)",
+        "tonalRamp": [
+          "#060D08",
+          "#18281E",
+          "#314538",
+          "#4E6456",
+          "#6D8475",
+          "#8EA596",
+          "#BAC8BF",
+          "#EBF0ED"
+        ]
+      },
+      "dark-carbs": {
+        "role": "tertiary",
+        "displayName": "Carbs Blue (dark)",
+        "canonical": "oklch(75.9% 0.124 258.4)",
+        "tonalRamp": [
+          "#000924",
+          "#002056",
+          "#0D3C80",
+          "#2D5CA2",
+          "#4D7DC6",
+          "#6D9FEB",
+          "#A7C6F5",
+          "#E6EFFD"
+        ]
+      },
+      "dark-protein": {
+        "role": "tertiary",
+        "displayName": "Protein Orange (dark)",
+        "canonical": "oklch(78.3% 0.136 46.2)",
+        "tonalRamp": [
+          "#200000",
+          "#4D0000",
+          "#751C00",
+          "#983E00",
+          "#BD5F2D",
+          "#E28150",
+          "#F1B498",
+          "#FCEAE2"
+        ]
+      },
+      "dark-fat": {
+        "role": "tertiary",
+        "displayName": "Fat Gold (dark)",
+        "canonical": "oklch(85.0% 0.147 88.7)",
+        "tonalRamp": [
+          "#170700",
+          "#3C1B00",
+          "#5F3600",
+          "#7F5500",
+          "#A17600",
+          "#C49800",
+          "#DBC281",
+          "#F5EEDC"
+        ]
+      },
+      "dark-error": {
+        "role": "neutral",
+        "displayName": "Error (dark)",
+        "canonical": "oklch(76.7% 0.138 28.7)",
+        "tonalRamp": [
+          "#210000",
+          "#4F0000",
+          "#78100C",
+          "#9D362D",
+          "#C2584C",
+          "#E77A6C",
+          "#F5B0A6",
+          "#FEE9E6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero h1 only, in forest."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s; larger on the closing call, smaller on legal pages."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3s in rows, plans, the meal card and privacy columns."
+      },
+      "number": {
+        "displayName": "Number",
+        "purpose": "Kcal, grams, weights and prices in Bricolage 800 with tabular figures."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero sentence and section introductions, in muted."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, max 62ch (68ch on legal pages)."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Food tag names and row names; buttons at 16px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tag details, sample captions, fragment titles, chart labels."
+      },
+      "doc-subhead": {
+        "displayName": "Doc Subhead",
+        "purpose": "h3 on legal pages, Inter rather than display."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient",
+        "value": "0 18px 40px rgba(15, 31, 23, 0.12)",
+        "purpose": "Food tags, the scan total chip, the meal card. Dark: 0 18px 40px rgba(0, 0, 0, 0.45)."
+      },
+      {
+        "name": "plate",
+        "value": "0 40px 80px rgba(15, 31, 23, 0.16), 0 8px 18px rgba(15, 31, 23, 0.10)",
+        "purpose": "The hero plate only. Dark: 0 40px 80px rgba(0, 0, 0, 0.55), 0 8px 18px rgba(0, 0, 0, 0.35)."
+      },
+      {
+        "name": "pin",
+        "value": "0 2px 8px rgba(15, 31, 23, 0.3)",
+        "purpose": "The lime food dots."
+      },
+      {
+        "name": "corner-lift",
+        "value": "drop-shadow(0 6px 6px rgba(40, 60, 10, 0.22))",
+        "purpose": "Filter on the hero scan corners so they read as a frame over the photo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrances: corners, tags, total chip."
+      },
+      {
+        "name": "ease-std",
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "purpose": "State transitions (button press and fill, field border, nav hairline) and the scan line sweep."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97), 120ms ease-std",
+        "purpose": "Button press."
+      },
+      {
+        "name": "state",
+        "value": "180ms ease-std",
+        "purpose": "Color, border and outline changes."
+      },
+      {
+        "name": "scan-corners",
+        "value": "560ms ease-out; scale 1.1 to 1, opacity 0 to 1",
+        "purpose": "Scan step 1: the brackets close in."
+      },
+      {
+        "name": "scan-sweep",
+        "value": "1000ms ease-std after 380ms; top 10% to 88%, fading in and out",
+        "purpose": "Scan step 2: the lime line and its trailing band pass over the plate."
+      },
+      {
+        "name": "scan-tag",
+        "value": "380ms ease-out at 700, 780, 930 and 1100ms; scale 0.9 to 1",
+        "purpose": "Scan step 3: tags pop onto their foods in sequence."
+      },
+      {
+        "name": "scan-total",
+        "value": "520ms ease-out at 1420ms, rise 14px; count-up 760ms quartic ease-out",
+        "purpose": "Scan step 4: the total arrives and counts up."
+      },
+      {
+        "name": "scan-settle",
+        "value": "2200ms",
+        "purpose": "Animation classes removed, the resting state holds, Scan again appears."
+      },
+      {
+        "name": "caret",
+        "value": "1s steps(1) infinite",
+        "purpose": "The voice transcript caret; off under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 1ms, no delays, scroll-behavior auto; the scan never arms",
+        "purpose": "Every animation has a still final state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-stack",
+        "value": "960px"
+      },
+      {
+        "name": "tablet",
+        "value": "860px"
+      },
+      {
+        "name": "phone",
+        "value": "560px"
+      },
+      {
+        "name": "narrow",
+        "value": "460px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Forest filled action on light surfaces; lime with forest text in dark mode.",
+      "html": "<button class=\"ds-btn\">Join the early testers</button>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:16px;border:0;font:600 16px/1 var(--text);background:var(--forest);color:#fff;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0,0,1),background-color 180ms cubic-bezier(0.2,0,0,1);}.ds-btn:hover{background:var(--forest-deep);}.ds-btn:active{transform:scale(0.97);}.ds-btn:focus-visible{outline:3px solid var(--forest);outline-offset:3px;}"
+    },
+    {
+      "name": "Lime Button",
+      "kind": "button",
+      "refersTo": "button-lime",
+      "description": "The action on a forest panel.",
+      "html": "<div class=\"ds-on-forest\"><button class=\"ds-btn-lime\">Join the early testers</button></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-on-forest{background:#123B2A;padding:24px;border-radius:24px;}.ds-btn-lime{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:16px;border:0;font:600 16px/1 var(--text);background:var(--lime);color:#123B2A;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0,0,1),background-color 180ms cubic-bezier(0.2,0,0,1);}.ds-btn-lime:hover{background:#B6E04F;}.ds-btn-lime:active{transform:scale(0.97);}.ds-btn-lime:focus-visible{outline:3px solid #fff;outline-offset:3px;}"
+    },
+    {
+      "name": "Signup Field",
+      "kind": "input",
+      "refersTo": "signup-field",
+      "description": "Email input and button in one white rounded row.",
+      "html": "<form class=\"ds-signup\"><input type=\"email\" placeholder=\"Your Gmail address\" aria-label=\"Your Gmail address\"><button class=\"ds-btn\" type=\"button\">Join the early testers</button></form>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-signup{display:flex;gap:8px;padding:8px;max-width:520px;background:var(--card);border:1.5px solid var(--border);border-radius:20px;transition:border-color 180ms cubic-bezier(0.2,0,0,1);}.ds-signup:focus-within{border-color:var(--forest);outline:3px solid var(--lime);outline-offset:2px;}.ds-signup input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:400 17px var(--text);padding:0 12px;min-height:48px;}.ds-signup input:focus{outline:none;}.ds-signup input::placeholder{color:var(--muted);opacity:1;}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:16px;border:0;font:600 16px/1 var(--text);background:var(--forest);color:#fff;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0,0,1),background-color 180ms cubic-bezier(0.2,0,0,1);}.ds-btn:hover{background:var(--forest-deep);}.ds-btn:active{transform:scale(0.97);}.ds-btn:focus-visible{outline:3px solid var(--forest);outline-offset:3px;}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Sticky cream bar: logo and wordmark, four links, the small primary button.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-brand\"><span class=\"ds-logo\"></span>plato</span><nav><a href=\"#\">How it works</a><a href=\"#\">Coach</a><a href=\"#\">Pricing</a><a href=\"#\">Privacy</a></nav><span class=\"ds-sp\"></span><a class=\"ds-btn-s\" href=\"#\">Join the testers</a></header>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-nav{display:flex;align-items:center;gap:28px;height:76px;padding:0 24px;background:var(--ground);border-bottom:1px solid var(--border);}.ds-sp{flex:1;}.ds-brand{display:flex;align-items:center;gap:10px;font:800 26px/1 var(--display);letter-spacing:-0.03em;color:var(--forest);}.ds-logo{width:38px;height:38px;border-radius:11px;background:var(--forest);}.ds-nav nav{display:flex;gap:26px;}.ds-nav nav a{color:var(--ink);text-decoration:none;font:500 15px var(--text);padding:8px 0;}.ds-nav nav a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:3px;}.ds-nav a:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:8px;}.ds-btn-s{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:14px;background:var(--forest);color:#fff;text-decoration:none;font:600 15px/1 var(--text);}.ds-btn-s:hover{background:var(--forest-deep);}"
+    },
+    {
+      "name": "Food Tag",
+      "kind": "chip",
+      "refersTo": "food-tag",
+      "description": "A lime dot pinned to a food on the plate photo, with its white tag beside it.",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-food\"><i class=\"ds-dot\"></i><div class=\"ds-tag\"><b>Salmon fillet · 150 g</b><span>310 kcal · 33 g protein</span></div></div></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-stage{position:relative;height:96px;background:#8A8F86;border-radius:16px;}.ds-food{position:absolute;left:40px;top:48px;}.ds-dot{position:absolute;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--lime);border:3px solid #fff;box-shadow:0 2px 8px rgba(15,31,23,0.3);}.ds-tag{position:absolute;left:20px;top:0;transform:translateY(-50%);white-space:nowrap;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:9px 14px 10px;box-shadow:var(--shadow);}.ds-tag b{display:block;font:600 15px/1.25 var(--text);color:var(--ink);}.ds-tag span{display:block;font:400 13px/1.3 var(--text);color:var(--muted);}"
+    },
+    {
+      "name": "Scan Total",
+      "kind": "custom",
+      "refersTo": "scan-total",
+      "description": "The one forest chip carrying the meal kcal in lime.",
+      "html": "<div class=\"ds-total\"><small>Dinner · 4 foods</small><strong>572 kcal</strong><em>41 g protein</em></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-total{display:inline-block;background:#123B2A;color:#fff;border-radius:24px;padding:14px 20px 16px;min-width:210px;box-shadow:var(--shadow);}.ds-total small{display:block;font:500 13px/1.3 var(--text);color:#CFE3D6;}.ds-total strong{display:block;font:800 40px/1.05 var(--display);letter-spacing:-0.02em;color:var(--lime);font-variant-numeric:tabular-nums;}.ds-total em{font:500 14px var(--text);font-style:normal;color:#CFE3D6;}"
+    },
+    {
+      "name": "Sample Fragment",
+      "kind": "card",
+      "refersTo": "sample-fragment",
+      "description": "A small labelled piece of what the app shows, never a full fake screen.",
+      "html": "<div class=\"ds-frag\"><div class=\"ds-frag-t\">Check your meal</div><div class=\"ds-row\"><span><b>Salmon fillet</b> · 150 g</span><span class=\"ds-k\">310 kcal</span></div><div class=\"ds-row\"><span><b>White rice</b> · 1 cup</span><span class=\"ds-k\">205 kcal</span></div><div class=\"ds-acts\"><span class=\"ds-pill ds-f\">Log dinner · 572 kcal</span><span class=\"ds-pill ds-l\">Fix a food</span></div><p class=\"ds-sample\">Sample screen, for illustration.</p></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-frag{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:18px 20px;max-width:520px;font:400 15px/1.5 var(--text);color:var(--ink);}.ds-frag-t{font:600 13px var(--text);color:var(--muted);margin-bottom:10px;}.ds-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--divider);}.ds-row:first-of-type{border-top:0;}.ds-row span{color:var(--muted);}.ds-row b{color:var(--ink);font-weight:600;}.ds-row .ds-k{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;}.ds-acts{display:flex;gap:8px;margin-top:12px;}.ds-pill{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;font:600 14px var(--text);}.ds-f{background:#123B2A;color:#fff;}.ds-l{border:1px solid var(--border);background:var(--card);color:var(--ink);}.ds-sample{font-size:13px;color:var(--muted);margin:14px 0 0;}"
+    },
+    {
+      "name": "Forest Panel",
+      "kind": "card",
+      "refersTo": "forest-panel",
+      "description": "Where Plato speaks: white headline, sage text, lime checks.",
+      "html": "<div class=\"ds-panel\"><h2>A coach that has read your week.</h2><p>Answers from your own meals, workouts and weigh-ins.</p><ul><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg><span><b>One tip a day</b>, built on a real pattern in your logs.</span></li></ul></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-panel{background:#123B2A;color:#fff;border-radius:32px;padding:48px;}.ds-panel h2{margin:0;font:800 40px/1.02 var(--display);letter-spacing:-0.03em;color:#fff;}.ds-panel p{color:#CFE3D6;font:400 18px/1.6 var(--text);}.ds-panel ul{list-style:none;padding:0;margin:20px 0 0;}.ds-panel li{display:grid;grid-template-columns:26px 1fr;gap:10px;color:#CFE3D6;font:400 17px/1.6 var(--text);}.ds-panel li b{color:#fff;font-weight:600;}.ds-panel svg{stroke:var(--lime);margin-top:4px;}"
+    },
+    {
+      "name": "Closing Frame",
+      "kind": "custom",
+      "refersTo": "forest-panel",
+      "description": "The final call: a forest panel framed by lime scan corners.",
+      "html": "<div class=\"ds-close\"><svg class=\"ds-cc ds-tl\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><path d=\"M7 73V39A32 32 0 0 1 39 7h34\"/></svg><svg class=\"ds-cc ds-tr\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><path d=\"M7 73V39A32 32 0 0 1 39 7h34\"/></svg><svg class=\"ds-cc ds-bl\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><path d=\"M7 73V39A32 32 0 0 1 39 7h34\"/></svg><svg class=\"ds-cc ds-br\" viewBox=\"0 0 80 80\" aria-hidden=\"true\"><path d=\"M7 73V39A32 32 0 0 1 39 7h34\"/></svg><h2>Help us test Plato.</h2><p>Leave the Gmail on your Android phone.</p><button class=\"ds-btn-lime\">Join the early testers</button></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-close{position:relative;background:#123B2A;color:#fff;border-radius:32px;padding:80px 40px;text-align:center;}.ds-close h2{margin:0;font:800 48px/1.02 var(--display);letter-spacing:-0.03em;}.ds-close p{color:#CFE3D6;font:400 18px/1.6 var(--text);}.ds-cc{position:absolute;width:56px;height:56px;overflow:visible;pointer-events:none;}.ds-cc path{fill:none;stroke:var(--lime);stroke-width:14;stroke-linecap:round;}.ds-tl{left:22px;top:22px;}.ds-tr{right:22px;top:22px;transform:scaleX(-1);}.ds-bl{left:22px;bottom:22px;transform:scaleY(-1);}.ds-br{right:22px;bottom:22px;transform:scale(-1,-1);}.ds-btn-lime{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:16px;border:0;font:600 16px/1 var(--text);background:var(--lime);color:#123B2A;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0,0,1),background-color 180ms cubic-bezier(0.2,0,0,1);}.ds-btn-lime:hover{background:#B6E04F;}.ds-btn-lime:active{transform:scale(0.97);}.ds-btn-lime:focus-visible{outline:3px solid #fff;outline-offset:3px;}"
+    },
+    {
+      "name": "Pro Plan",
+      "kind": "card",
+      "refersTo": "plan-pro",
+      "description": "The forest plan card with the lime price.",
+      "html": "<div class=\"ds-plan\"><h3>Pro</h3><p class=\"ds-price\">$3.99 <small>a month</small></p><p class=\"ds-per\">or $24.99 a year, with a 7-day free trial</p><ul><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg><span>Unlimited AI photo scans</span></li></ul></div>",
+      "css": ":host{--ground:#F6F4EE;--card:#FFFFFF;--border:#E6E2D8;--divider:#EFECE4;--ink:#0F1F17;--muted:#5B6460;--forest:#123B2A;--forest-deep:#0E2F21;--lime:#C8F169;--mint:#E9F0E3;--shadow:0 18px 40px rgba(15,31,23,0.12);--display:\"Bricolage Grotesque\",\"Inter\",system-ui,sans-serif;--text:\"Inter\",system-ui,sans-serif;}.ds-plan{background:#123B2A;color:#fff;border-radius:28px;padding:36px;}.ds-plan h3{margin:0;font:800 30px/1.1 var(--display);letter-spacing:-0.02em;}.ds-price{font:800 56px/1 var(--display);letter-spacing:-0.03em;color:var(--lime);margin:18px 0 4px;font-variant-numeric:tabular-nums;}.ds-price small{font:500 17px var(--text);letter-spacing:0;color:#CFE3D6;}.ds-per{margin:0;color:#CFE3D6;font:400 15px var(--text);}.ds-plan ul{list-style:none;padding:0;margin:24px 0 0;}.ds-plan li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:#E4EEE7;font:400 17px/1.6 var(--text);}.ds-plan svg{stroke:var(--lime);margin-top:4px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Scanned Plate",
+    "overview": "The website is Forest & Lime from the app, opened up to a wide screen. A cream table is the ground, a real plate photographed from above is the hero object, and the app's thick round-ended lime scan corners close in around it while white food tags land on each food. Everything after the fold is the app explaining itself: editorial rows of the four ways to log, each beside a small sample fragment of what the app shows; a white meal card with its macro bars; forest panels where Plato speaks (the coach, the Pro plan, the closing call).\n\nThe page is calm and spacious, with big Bricolage Grotesque ExtraBold headlines in forest and Inter doing all the reading at 17px. Depth is soft and warm: one diffuse ambient shadow for floating things, a heavier double shadow under the plate, and thin warm borders everywhere else. Proof is the app's own numbers and the real photo; there are no testimonials, ratings, phone mockups or invented screens.\n\nLegal pages (privacy, terms, delete account, 404) share the nav, footer and tokens, set in a single 760px reading column with white boxes for the short version and plain tables.",
+    "keyCharacteristics": [
+      "A real plate photo inside lime scan corners, bleeding off the right edge on wide screens: the plate is the page.",
+      "Four white food tags (with a lime dot pinned to each food) and one forest total chip carrying 572 kcal in lime.",
+      "White cards with thin warm borders on cream; forest panels for the coach, the Pro plan and the closing call.",
+      "Every product fragment is labelled as a sample; no fake screenshots.",
+      "Light and dark from `prefers-color-scheme`, with forest panels staying forest in both.",
+      "One scan choreography on load, replayable, and a still final state under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Lime Lives On Forest Rule",
+        "body": "Lime appears only on forest or dark surfaces, or as the scan corners themselves (the hero brackets, the label bracket on a sample fragment, the closing-call corners). On cream or white, the highlight is forest. Lime never sets text on a light surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Macro Hues Code Rule",
+        "body": "Blue, orange and gold mean carbs, protein and fat. They never decorate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Numbers Rule",
+        "body": "Every number that a reader compares (kcal, grams, prices, weights) carries tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Headlines, labels and buttons are sentence case. There are no uppercase kickers or eyebrows above headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Borders First Rule",
+        "body": "A resting card gets a 1px warm border, not a shadow. A shadow means the thing floats over something.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep lime on forest or dark surfaces, or as the scan corners. On cream and white, use forest for the highlight.",
+      "Do label every product fragment, chart, conversation and estimate as a sample (\"Sample estimate, for illustration.\", \"Sample data, for illustration.\").",
+      "Do use the real food photo and the owner's clay art; the clay art sits off a panel's corner, never inside UI.",
+      "Do use white cards with a 1px warm border (#E6E2D8) on the cream ground, and save shadows for things floating over the plate or page.",
+      "Do give every animation a still path under `prefers-reduced-motion`: the scan shows its final state, the caret stops blinking, smooth scrolling turns off.",
+      "Do follow the app's DESIGN.md for shared tokens (forest, lime, sage, mint, cream, border, macro hues, the dark set) and for the original clay logo, which is never redrawn."
+    ],
+    "donts": [
+      "Don't use fake screenshots or phone mockups. Until the owner's real screenshots exist, show only sample fragments labelled as samples.",
+      "Don't invent testimonials, ratings, user counts or accuracy claims.",
+      "Don't set lime text or icons on cream or white; the scan corners are the only lime drawn on a light surface.",
+      "Don't use the macro hues for anything but carbs, protein and fat.",
+      "Don't put uppercase kickers or eyebrows above headings.",
+      "Don't nest a card inside a card; a tile inside a card uses the cream ground, not another border."
+    ]
+  }
+}
