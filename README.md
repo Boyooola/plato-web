@@ -46,13 +46,9 @@ If you add a script, font or API from somewhere else, add its origin to the poli
 
 **Also included:** `robots.txt` and `sitemap.xml` for search engines. `404.html` uses root paths (`/styles.css`), which suits a site served from the domain root.
 
-## Before publishing: fill these in
+## Contact and legal details
 
-Search for `[` in `privacy.html`, `terms.html`, `delete-account.html`, `index.html` and `404.html`:
-
-- `[Developer name]`: the name you publish under.
-- `[support email]`: a support address. It also appears in the footer's Contact link.
-- `[country or state]`: the governing law in the terms.
+The legal pages name **Plato** as the provider, with **support@useplato.app** as the contact (privacy questions, account deletion, the footer's Contact link). There is no governing-law clause in the terms. Set up `support@useplato.app` in Cloudflare Email Routing so it reaches a real inbox.
 
 The legal text started as drafts in the app repo (`../plato/legal/`), and the copies here are now the published version. Keep them in step with any feature that changes what data leaves the phone. They are plain-language drafts, not legal advice.
 
